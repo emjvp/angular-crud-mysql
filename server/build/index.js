@@ -19,11 +19,11 @@ class Server {
         this.app.use(morgan_1.default('dev'));
         this.app.use(cors_1.default());
         this.app.use(express_1.default.json());
-        this.app.use(express_1.default.urlencoded(extended, false));
+        this.app.use(express_1.default.urlencoded({ extended: false }));
     }
     routes() {
         this.app.use(indexRoutes_1.default);
-        this.app.use('/games', gamesRoutes_1.default);
+        this.app.use('/api/games', gamesRoutes_1.default);
     }
     start() {
         this.app.listen(this.app.get('port'), () => {
