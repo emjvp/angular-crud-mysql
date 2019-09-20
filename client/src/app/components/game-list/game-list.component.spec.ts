@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed, HostBinding } from '@angular/core/testing';
 
 import { GameListComponent } from './game-list.component';
 
